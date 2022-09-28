@@ -17,11 +17,42 @@ const questions = [
     {
         type: "input",
         message: "What is your projects name?",
-        name: "project"
-    }
+        name: "project",
+    },
+    {
+        type: "input",
+        message: "Description of your project:",
+        name: "description",
+    },
+    {
+        type: "checkbox",
+        message: "What license does your project require? (SPACEBAR to checkmark and ENTER to confirm)",
+        name: License,
+        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'N/A'],
+    },
+    {
+        type: "input",
+        message: "What command should run dependencies?",
+        name: "install",
+    },
+    {
+        type: "input",
+        message: "what command should be used to run tests?",
+        name: "test",
+    },
+    {
+        type: "input",
+        message: "What does the user need to know about this repo?",
+        name: "use",
+    },
+    {
+        type: "input",
+        message: "How does the user contribute to this repo?",
+        name: "contribute",
+    },
 ];
 
-// TODO: Create a function to write README file
+
 function writeToFile(fileName, data) {}
 
 // TODO: Create a function to initialize app
