@@ -53,10 +53,20 @@ const questions = [
 ];
 
 
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    FontFaceSet.writeToFile(fileName, data, function (err) {
+        if (err) throw err;
+        console.log("File Created");
+    })
+}
 
-// TODO: Create a function to initialize app
-function init() {}
 
-// Function call to initialize app
+function init() {
+    inquirer.createPromptModule(questions).then((data) => {
+        const readmeFile = generateMarkdown(data);
+        writeToFile("generatedReadMe.md",readmeFile);
+    })
+}
+
+
 init();
