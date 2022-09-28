@@ -27,7 +27,7 @@ const questions = [
     {
         type: "checkbox",
         message: "What license does your project require? (SPACEBAR to checkmark and ENTER to confirm)",
-        name: License,
+        name: "license",
         choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'N/A'],
     },
     {
