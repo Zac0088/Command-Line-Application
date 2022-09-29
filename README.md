@@ -1,4 +1,4 @@
-## Command-Line-Application
+# Command-Line-Application #
 
 # Description #
 For this weeks challenge i was asked to create a Command line Application that generates a Readme file using Node JS and Inquirer.
@@ -32,8 +32,15 @@ THEN I am taken to the corresponding section of the README
 * What does the user need to know about using the repo?
 * What does the user need to know about contributing to the repo?
 
-# Screen Shot/Recording #
+# Screen Shot #
+![screenshot](/Screenshot%20(66).png)
+
+# Link to App Demo Video #
+https://drive.google.com/file/d/1-Hdf-r1TOaxCPErMBjBg_lT_LU-WPotV/view
+
+https://youtu.be/BaEL-CpnP6s
 
 # contact #
+[Zachary Smart on GitHub](https://github.com/Zac0088)
 
 
