@@ -17,7 +17,7 @@ const questions = [
     {
         type: "input",
         message: "What is your projects name?",
-        name: "project",
+        name: "title",
     },
     {
         type: "input",
@@ -28,7 +28,7 @@ const questions = [
         type: "checkbox",
         message: "What license does your project require? (SPACEBAR to checkmark and ENTER to confirm)",
         name: "license",
-        choices: ['MIT', 'APACHE 2.0', 'GPL 3.0', 'BSD 3', 'N/A'],
+        choices: ['MIT', 'APACHE 2.0', 'BSD', 'N/A'],
     },
     {
         type: "input",
@@ -53,12 +53,6 @@ const questions = [
 ];
 
 
-// function writeToFile(fileName, data) {
-//     fs.writeToFile(fileName, data, function (err) {
-//         if (err) throw err;
-//         console.log("File Created");
-//     })
-// }
 function writeToFile(fileName,data) {
     fs.writeFile(fileName, data, (err) =>
     err? console.log(err) : console.log('success! File Created!'));
