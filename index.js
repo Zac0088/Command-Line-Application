@@ -53,16 +53,19 @@ const questions = [
 ];
 
 
-function writeToFile(fileName, data) {
-    FontFaceSet.writeToFile(fileName, data, function (err) {
-        if (err) throw err;
-        console.log("File Created");
-    })
-}
-
+// function writeToFile(fileName, data) {
+//     fs.writeToFile(fileName, data, function (err) {
+//         if (err) throw err;
+//         console.log("File Created");
+//     })
+// }
+function writeToFile(fileName,data) {
+    fs.writeFile(fileName, data, (err) =>
+    err? console.log(err) : console.log('success! File Created!'));
+};
 
 function init() {
-    inquirer.createPromptModule(questions).then((data) => {
+    inquirer.prompt(questions).then((data) => {
         const readmeFile = generateMarkdown(data);
         writeToFile("generatedReadMe.md",readmeFile);
     })
